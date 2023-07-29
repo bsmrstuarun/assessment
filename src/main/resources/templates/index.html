@@ -1,0 +1,17 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<script type="text/javascript" th:src="@{/js/script.js}"></script>
+<head>
+    <meta charset="utf-8" />
+    <title>CSV Lead Upload</title>
+</head>
+<body>
+<h1>Upload CSV File</h1>
+<form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="csvFile" accept=".csv"/>
+    <input type="submit" value="Upload"/>
+</form>
+</body>
+</html>
